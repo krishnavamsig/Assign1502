@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/
+	jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- Popper JS -->
+	<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/
+	popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/js/bootstrap.min.js">
+	</script>
+</head>
+
+<body><br>
+	<p class="text-center">
+	FORM VALIDATION USING JQUERY
+	</p>
+
+
+
+
+	<div class="container">
+        <div class="col-lg-8
+             m-auto d-block">
+          <form>
+            <div class="form-group">
+                <label for ="user">
+                  Username:
+                </label>
+                <input type="text"
+                      name="username" id="usernames"
+                      class="form-control">
+                <h5 id="usercheck" style="color: red;" >
+                      **Username is missing
+                </h5>
+            </div>
+
+            <div class="form-group">
+                <label for ="Phoneno">
+                  Phoneno:
+                </label>
+                <input type="number"
+                      name="phoneno" id="phoneno"
+                      class="form-control">
+                <h5 id="phonecheck" style="color: red;" >
+                      **Phoneno is missing
+                </h5>
+            </div>
+            
+            <div class="form-group">
+            <p>Please select your Gender:</p>
+            <input type="radio" id="Gender" name="Gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Gender" name="Gender" value="Female">
+            <label for="Female">Female</label><br>
+            <span id="spnError" class="error" style="display:none;color: red;"><h5>**Please select an option</h5></span>
+            </div>
+
+            <div class="form-group">
+                <p>Select your subjects</p>
+                <input id="checkbox" type="checkbox" name="Physics" value="Physics">Physics<br>
+                <input id="checkbox" type="checkbox" name="MAths" value="Maths">Maths<br>
+                <input id="checkbox" type="checkbox" name="Chemistry" value="Chemistry">Chemistry<br>
+            </div>
+            <div class="form-group">
+                <p>Please select your desired Branch</p>
+                <select id="Department">
+                    <option value="Department"></option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="IT">IT</option>
+                </select>
+            </div>            
+            
+            
+   
+
+   
+            <input type="submit" id="submitbtn" 
+               value="Submit" class="btn btn-primary" onClick="display()">  
+          </form>
+        </div>
+      </div> 
+
+         
+        <div align="center" id="displayarea"></div>
+        <div align="center" id="displayarea1"></div>
+        <div align="center" id="displayarea2"></div>
+        <div align="center" id="displayarea3"></div>
+        <div align="center" id="displayarea4"></div>
+   
+      <!--  Including app.js jQuery Script -->
+        <script src="../14-02-22/app.js"></script>
+    </body>
+</html>
+
